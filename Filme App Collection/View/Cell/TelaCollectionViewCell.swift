@@ -35,5 +35,4 @@ class TelaCollectionViewCell: UICollectionViewCell {
         let date = dateFormatterGet.date(from: dateString)
         return dateFormatter.string(from: date!)
     }
-    
 }

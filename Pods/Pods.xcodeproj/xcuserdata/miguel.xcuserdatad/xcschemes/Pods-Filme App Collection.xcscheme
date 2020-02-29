@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1120"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B812455098EC9BF6E0772BFEB9D986E"
+               BlueprintIdentifier = "D5606025A40CFC9F3A1CEF6E11FE6EC8"
                BuildableName = "Pods_Filme_App_Collection.framework"
                BlueprintName = "Pods-Filme App Collection"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -40,15 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B812455098EC9BF6E0772BFEB9D986E"
-            BuildableName = "Pods_Filme_App_Collection.framework"
-            BlueprintName = "Pods-Filme App Collection"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 import CoreData
+import Lottie
 
 class DescricaoViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -189,7 +190,13 @@ class DescricaoViewController: UIViewController, UICollectionViewDelegate, UICol
 
         do {
             try context.save()
-            favoriteButton.setImage(UIImage(named: "icon_love_selected"), for: .normal)
+            favoriteButton.setImage(nil, for: .normal)
+            let CheckAnimationView = LOTAnimationView(name: "heart_fav2")
+            favoriteButton.frame = CGRect(x: 0, y: 0, width: 45, height: 45)
+            favoriteButton.contentMode = .scaleAspectFit
+            self.favoriteButton.addSubview(CheckAnimationView)
+            CheckAnimationView.frame = self.favoriteButton.bounds
+            CheckAnimationView.play()
         } catch let erro {
             print("Dados não foram salvos: \(erro.localizedDescription)")
         }

@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import Kingfisher
 
+
 protocol CollectionProtocol {
     func deleteData(indx: Int)
 }

@@ -6,6 +6,6 @@ target 'Filme App Collection' do
   use_frameworks!
 
   # Pods for Filme App Collection
-  pod 'Kingfisher', '~> 4.0'
-
+  pod 'Kingfisher', '~> 5.0'
+  pod 'lottie-ios'
 end

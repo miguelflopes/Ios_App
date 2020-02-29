@@ -8,6 +8,8 @@
 # Tecnologias/Frameworks utilizados
  - Swift 5+
  - CoreData
+ - Lottie
  - KingFisher
  - Testes Unitarios
  - MVC
+ 

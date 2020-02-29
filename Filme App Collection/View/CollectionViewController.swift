@@ -10,7 +10,7 @@ import UIKit
 import Kingfisher
 import CoreData
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     private var dados_json = [FormatoJson]()
     private var resultado = [Result]()
@@ -32,9 +32,9 @@ class CollectionViewController: UICollectionViewController {
         self.referTableView.reloadData()
         self.funcGeneroJson()
         self.funcGetMoviesUpcoming()
-        //self.dados_json = Providers().funcGetMoviesPopular()
     }
-  
+    
+    
     @IBAction func indexChanged(_ sender: Any) {
         switch segmentControl.selectedSegmentIndex
         {
@@ -48,7 +48,6 @@ class CollectionViewController: UICollectionViewController {
     }
     
     // MARK: Get Movies Popular
-    
     public func funcGetMoviesPopular() {
         guard let typicodeUrl = URL(string: "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=2164a2fbfffba318c500028e8631ffd9") else { return }
 
@@ -69,7 +68,6 @@ class CollectionViewController: UICollectionViewController {
     }
     
     // MARK: Get Movies Upcoming
-    
     func funcGetMoviesUpcoming() {
         guard let typicodeUrl = URL(string: "https://api.themoviedb.org/3/movie/upcoming?api_key=2164a2fbfffba318c500028e8631ffd9") else { return }
 
@@ -90,7 +88,6 @@ class CollectionViewController: UICollectionViewController {
     }
     
     // MARK: Get Genero
-    
     func funcGeneroJson() {
         guard let typicodeUrl = URL(string: "https://api.themoviedb.org/3/genre/movie/list?api_key=2164a2fbfffba318c500028e8631ffd9&language=en-US") else { return }
 
@@ -149,12 +146,20 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //let celulaReuso = "celulaReuso"
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaReuso", for: indexPath) as? TelaCollectionViewCell else { return UICollectionViewCell() }
         
         let selecionaImagem = ImageResource(downloadURL: URL(string: "https://image.tmdb.org/t/p/w500/" +  resultado[indexPath.row].posterPath)!, cacheKey: resultado[indexPath.row].posterPath)
         cell.setupCell(title: resultado[indexPath.row].title, image: selecionaImagem, dateLancemto: resultado[indexPath.row].releaseDate)
-        
+
         return cell
     }
+
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenSize: CGRect = UIScreen.main.bounds
+        let screenWidth = screenSize.width / 2.1
+        let screenHeight = screenSize.height / 3
+        return CGSize(width: screenWidth, height: screenHeight)
+    }
+    
+
 }

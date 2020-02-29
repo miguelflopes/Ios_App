@@ -1,43 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Init Screen View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="initScreen" id="01J-lp-oVM" customClass="InitScreenViewController" customModule="Filme_App_Collection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Jwf-41-iZi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jwf-41-iZi">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.029831303283572197" green="0.12182868272066116" blue="0.14270490407943726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="68D-iy-tCx"/>
+                                    <constraint firstAttribute="height" constant="100" id="jjs-DW-A85"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.029831303279999999" green="0.1218286827" blue="0.1427049041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Jwf-41-iZi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="131-db-sDl"/>
-                            <constraint firstItem="Jwf-41-iZi" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="N96-JS-qgn"/>
-                            <constraint firstItem="Jwf-41-iZi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="boY-I0-g2y"/>
-                            <constraint firstItem="Jwf-41-iZi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pGD-h6-6Rr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jwf-41-iZi" secondAttribute="trailing" constant="138" id="4jz-4y-XBF"/>
+                            <constraint firstItem="Jwf-41-iZi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="JVU-12-6ax"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jwf-41-iZi" secondAttribute="bottom" constant="284" id="aT3-7h-Blp"/>
+                            <constraint firstItem="Jwf-41-iZi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="283" id="x13-wk-Cvd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="Jwf-41-iZi" id="3d3-bD-5oH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="splash" width="1024" height="1024"/>
-    </resources>
 </document>

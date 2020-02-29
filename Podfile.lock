@@ -1,20 +1,20 @@
 PODS:
-  - Kingfisher (4.9.0)
-  - SwiftLint (0.29.1)
+  - Kingfisher (5.0.0)
+  - lottie-ios (2.5.2)
 
 DEPENDENCIES:
-  - Kingfisher (~> 4.0)
-  - SwiftLint
+  - Kingfisher (~> 5.0)
+  - lottie-ios
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Kingfisher
-    - SwiftLint
+    - lottie-ios
 
 SPEC CHECKSUMS:
-  Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
-  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
+  Kingfisher: 2b0dd651e4fe5a07305b8242fde56f8e2d410f58
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
 
-PODFILE CHECKSUM: 7450809e1546d2988162e63d2d74ee4acc236ca3
+PODFILE CHECKSUM: d4d636b8a32567952dbd9845136bf26ad6340a60
 
 COCOAPODS: 1.6.1

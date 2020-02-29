@@ -13,6 +13,7 @@
 		490C16EB2260877D00BB65CF /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C16EA2260877D00BB65CF /* FavoriteCollectionViewCell.swift */; };
 		4918C983223A579000DA443D /* DescricaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918C982223A579000DA443D /* DescricaoViewController.swift */; };
 		494434062391AC470053A3DC /* IdCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494434052391AC470053A3DC /* IdCoreDataTests.swift */; };
+		4977C9A523FF6988005CEB88 /* heart_fav2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4977C9A423FF6987005CEB88 /* heart_fav2.json */; };
 		49BC6838237CB503003358D9 /* GetJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BC6837237CB503003358D9 /* GetJsonTests.swift */; };
 		49DFF62C217936040025D732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DFF62B217936040025D732 /* AppDelegate.swift */; };
 		49DFF631217936040025D732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DFF62F217936040025D732 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		49DFF640217936A30025D732 /* MovieModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DFF63F217936A30025D732 /* MovieModelo.swift */; };
 		49DFF642217937250025D732 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DFF641217937250025D732 /* CollectionViewController.swift */; };
 		49E2D9A6238EF11C002E23C7 /* DescricaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2D9A5238EF11C002E23C7 /* DescricaoCollectionViewCell.swift */; };
+		49F7BD8C23FF161400C8EAA4 /* heart_fav.json in Resources */ = {isa = PBXBuildFile; fileRef = 49F7BD8B23FF161400C8EAA4 /* heart_fav.json */; };
+		49F7BD8E23FF1A3F00C8EAA4 /* movie_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 49F7BD8D23FF1A3F00C8EAA4 /* movie_loading.json */; };
+		49F7BD9023FF1C0700C8EAA4 /* InitScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F7BD8F23FF1C0700C8EAA4 /* InitScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,7 @@
 		4918C982223A579000DA443D /* DescricaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescricaoViewController.swift; sourceTree = "<group>"; };
 		494433FB2391AAF50053A3DC /* CollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		494434052391AC470053A3DC /* IdCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCoreDataTests.swift; sourceTree = "<group>"; };
+		4977C9A423FF6987005CEB88 /* heart_fav2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart_fav2.json; sourceTree = "<group>"; };
 		49BC6835237CB503003358D9 /* Filme App CollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Filme App CollectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BC6837237CB503003358D9 /* GetJsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJsonTests.swift; sourceTree = "<group>"; };
 		49BC6839237CB503003358D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +68,9 @@
 		49DFF63F217936A30025D732 /* MovieModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModelo.swift; sourceTree = "<group>"; };
 		49DFF641217937250025D732 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		49E2D9A5238EF11C002E23C7 /* DescricaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescricaoCollectionViewCell.swift; sourceTree = "<group>"; };
+		49F7BD8B23FF161400C8EAA4 /* heart_fav.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart_fav.json; sourceTree = "<group>"; };
+		49F7BD8D23FF1A3F00C8EAA4 /* movie_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_loading.json; sourceTree = "<group>"; };
+		49F7BD8F23FF1C0700C8EAA4 /* InitScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitScreen.swift; sourceTree = "<group>"; };
 		814EAB57360C9BB99A9EC3A5 /* Pods-Filme App Collection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filme App Collection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Filme App Collection/Pods-Filme App Collection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +123,9 @@
 			children = (
 				490C16E5225EDCA200BB65CF /* Core.xcdatamodeld */,
 				49DFF632217936080025D732 /* Assets.xcassets */,
+				49F7BD8D23FF1A3F00C8EAA4 /* movie_loading.json */,
+				49F7BD8B23FF161400C8EAA4 /* heart_fav.json */,
+				4977C9A423FF6987005CEB88 /* heart_fav2.json */,
 				49DFF63F217936A30025D732 /* MovieModelo.swift */,
 			);
 			path = Model;
@@ -137,6 +148,7 @@
 				4918C982223A579000DA443D /* DescricaoViewController.swift */,
 				49DFF641217937250025D732 /* CollectionViewController.swift */,
 				490C16E8225EE35000BB65CF /* FavoriteCollectionViewController.swift */,
+				49F7BD8F23FF1C0700C8EAA4 /* InitScreen.swift */,
 				49DFF62F217936040025D732 /* Main.storyboard */,
 				49DFF634217936080025D732 /* LaunchScreen.storyboard */,
 			);
@@ -315,7 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49DFF636217936080025D732 /* LaunchScreen.storyboard in Resources */,
+				4977C9A523FF6988005CEB88 /* heart_fav2.json in Resources */,
+				49F7BD8E23FF1A3F00C8EAA4 /* movie_loading.json in Resources */,
 				49DFF633217936080025D732 /* Assets.xcassets in Resources */,
+				49F7BD8C23FF161400C8EAA4 /* heart_fav.json in Resources */,
 				49DFF631217936040025D732 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,12 +366,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Filme App Collection/Pods-Filme App Collection-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -413,6 +430,7 @@
 				490C16EB2260877D00BB65CF /* FavoriteCollectionViewCell.swift in Sources */,
 				49DFF63E2179367D0025D732 /* TelaCollectionViewCell.swift in Sources */,
 				49DFF62C217936040025D732 /* AppDelegate.swift in Sources */,
+				49F7BD9023FF1C0700C8EAA4 /* InitScreen.swift in Sources */,
 				49E2D9A6238EF11C002E23C7 /* DescricaoCollectionViewCell.swift in Sources */,
 				4918C983223A579000DA443D /* DescricaoViewController.swift in Sources */,
 				490C16E9225EE35000BB65CF /* FavoriteCollectionViewController.swift in Sources */,
